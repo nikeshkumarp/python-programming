@@ -1,0 +1,9 @@
+Element=[]
+limit=int(input("Enter the element"))
+for i in range(limit):
+    temp=int(input())
+    Element.append(temp)
+   
+
+    
+print(list(Element))
