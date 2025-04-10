@@ -1,0 +1,27 @@
+def creat_list(l,n):
+	for i in range (n):
+		temp=int(input())
+		l.append(temp)
+	return l
+        
+        
+l1=[]
+l2=[]
+l3=[]
+n1=int(input("enter the number:"))
+n2=int(input("enter the number:"))
+n3=int(input("enter the number:"))
+        
+print("enter number in first list")
+l1=creat_list(l1,n1)
+print(l1)
+
+print("enter number in second list")
+l2=creat_list(l2,n2)
+print(l2)
+
+print("enter number in three list")
+l3=creat_list(l3,n3) 
+print(l3)   
+   
+        
