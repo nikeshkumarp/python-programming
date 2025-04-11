@@ -1,0 +1,48 @@
+Bal=0
+trans=[]
+while true:
+	print("Welcome to Bank App")
+	print("press 1 for Credit")
+	print("press 2 for Debit")
+	print("press 3 for showbal")
+	print("press 4 for last 5 Transaction")
+	print("press 5 for Exit")
+	choice=int(input("Enter the choice"))
+
+def Credit(amount,Bal,trans):
+	bal+=amount
+	print(amount,"bal added successfully")
+	trans.append(amount)
+	return Bal,trans
+
+def Debit(amount,Bal,trans):
+	if Bal<amount:
+		print("Insufficent Bal")
+		else:
+			Bal-=amount
+			print(amount,"Debit successfully")
+			trans.append(-amount)
+			return Bal,trans
+			
+def show_bal(amount):
+	    print("balance amount in u r account:",Amount)
+	    
+def Last_Five_Transaction(trans):
+	print("All Transaction")
+	
+
+
+if (choice==1):
+	amount=int(input("Enter the Amount"))
+	Bal,trans=Credit(amount,Bal,trans)
+elif (choice==2):
+	amount=int(input("Enter the Amount"))
+	bal,trans=Debit(amount,Bal,trans)
+elif (choice==3):
+	showbalance(Amount)
+elif (choice==4):
+	LastFive(trans)
+else:
+	Exit	
+else:
+	Exit	
