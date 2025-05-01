@@ -1,2 +1,4 @@
 text =" Hello World "
 print(text.strip())
+text="apple,banana,cherry"
+print(text.split(","))
